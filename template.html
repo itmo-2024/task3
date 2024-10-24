@@ -63,8 +63,10 @@
           display: flex;
           flex: 1;
           flex-flow: column;
-          align-items: center;
+          /* align-items: center; */
+          padding: 0 10px;
           justify-content: space-between;
+          /* width: 1440px; */
           margin: 0;
         }
 
@@ -73,7 +75,7 @@
           flex-flow: column;
           justify-content: space-between;
           gap: 120px;
-          width: 1140px;
+          /* width: 1140px; */
         }
 
         #screen1 {
@@ -87,6 +89,7 @@
         .logo-image {
           width: 40px;
           height: 40px;
+          margin: 0 5px;
           color: #363E45;
         }
 
@@ -118,9 +121,8 @@
         }
 
         #screen2 {
-          display: flex;
-          flex-flow: column;
-          justify-content: space-between;
+          display: grid;
+          gap: 20px;
           height: 614px;
         }
 
@@ -165,7 +167,7 @@
           height: 352px;
           display: flex;
           flex-flow: row;
-          justify-content: space-between;
+          justify-content: start;
           gap: 32px;
         }
 
@@ -215,10 +217,10 @@
         }
 
         #screen4 {
-          height: 576px;
           display: flex;
           flex-flow: column;
           justify-content: space-between;
+          gap: 40px;
         }
 
         .experience-title {
@@ -257,22 +259,15 @@
 
         .experience-text-image {
           display: flex;
-          flex-flow: row;
-          justify-content: space-between;
+          justify-content: start;
           gap: 32px;
-          width: 1140px;
-          height: 400px;
         }
 
         .experience-text {
-          width: 554px;
-          height: 400px;
           margin: 0;
         }
 
         #screen4 img {
-          width: 554px;
-          height: 400px;
           border-radius: 8px;
           object-fit: cover;
           object-position: center;
@@ -283,8 +278,6 @@
           line-height: 24px;
           font-weight: 500;
           color: #363E45;
-          width: 554px;
-          height: 24px;
           margin: 0;
         }
 
@@ -294,8 +287,6 @@
           line-height: 24px;
           font-weight: 400;
           color: #363E45A3;
-          width: 554px;
-          height: 24px;
         }
 
         .experience-time {
@@ -303,8 +294,6 @@
           font-size: 16px;
           line-height: 24px;
           font-weight: 400;
-          width: 554px;
-          height: 24px;
           color: #363E45;
         }
 
@@ -313,11 +302,11 @@
           font-size: 16px;
           line-height: 24px;
           font-weight: 400;
+          width: 554px;
           color: #363E45A3;
         }
 
         #screen5 {
-          height: 728px;
           display: flex;
           flex-flow: column;
           gap: 40px;
@@ -334,7 +323,8 @@
         .skills {
           margin-left: -16px;
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: repeat(auto-fit, minmax(554px, 1fr));
+          column-gap: 5px;
           font-weight: 400;
           color: #363E45;
         }
@@ -342,14 +332,13 @@
         .skills-section {
           display: flex;
           flex-direction: column;
-          width: 586px;
           height: 80px;
           margin: 0;
         }
 
         progress {
           margin-left: 16px;
-          width: 554px;
+          width: 100%;
           height: 8px;
           margin-top: 16px;
           border: none;
@@ -385,8 +374,6 @@
           flex-flow: column;
           justify-content: space-between;
           gap: 32px;
-          width: 1140px;
-          height: 200px;
           background-color: #98A3AE1F;
           border-radius: 8px;
         }
@@ -402,26 +389,25 @@
         }
 
         .new-skill-form {
-          display: flex;
-          flex-flow: row;
-          justify-content: space-between;
+          display: grid;
+          grid-template-columns: 5fr 5fr 1fr;
           gap: 16px;
+          padding-right: 32px;
           margin-bottom: 32px;
           margin-left: 32px;
-          width: 1076px;
-          height: 80px;
+          /* width: 90%; */
         }
 
         .skill-form-name-text {
           font-size: 16px;
           line-height: 24px;
           font-weight: 400;
+          white-space: nowrap;
           margin: 0;
           color: #363E45;
         }
 
         .skill-form-input {
-          width: 489px;
           height: 48px;
           background-color: #FFF;
           margin-top: 8px;
@@ -434,7 +420,7 @@
         }
 
         .skill-form-button {
-          width: 66px;
+          width: 100%;
           height: 48px;
           border: none;
           gap: 8px;
@@ -452,12 +438,19 @@
           transition: background-color 0.3s ease;
         }
 
-        .skill-form-button:hover {
-          background-color: #202326;
+        fieldset {
+          margin: 0;
+          padding: 0;
+          border: none;
         }
 
-        .skill-name {
-          width: 489px;
+        .skill-form-element {
+          display: flex;
+          flex-flow: column;
+        }
+
+        .skill-form-button:hover {
+          background-color: #202326;
         }
 
         #screen6 {
@@ -465,7 +458,6 @@
           flex-flow: column;
           justify-content: space-between;
           gap: 40px;
-          height: 488px;
         }
 
         .contacts-section-title {
@@ -478,10 +470,7 @@
 
         .contacts-group {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          justify-content: space-between;
-          width: 1140px;
-          height: 400px;
+          grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
           gap: 32px;
         }
 
@@ -507,6 +496,7 @@
           line-height: 24px;
           color: #363E45;
           font-weight: 500;
+          white-space: nowrap;
         }
 
         .contacts-info {
@@ -514,6 +504,7 @@
           margin-left: 32px;
           color: #363E45A3;
           font-size: 16px;
+          white-space: nowrap;
           line-height: 24px;
           font-weight: 400;
         }
@@ -675,15 +666,17 @@
           <section class="new-skill">
             <p class="new-skill-title">Add new skill</p>
             <form class="new-skill-form">
-              <section class="skill-name">
+              <fieldset class="skill-form-element skill-name">
                 <label for="skill-name" class="skill-form-name-text">Skill name</label>
-                <input class="skill-form-input"  name="skill-name" type="text">
-              </section>
-              <section class="skill-proficiency">
+                <input class="skill-form-input" name="skill-name" type="text">
+              </fieldset>
+              <fieldset class="skill-form-element skill-proficiency">
                 <label for="proficiency" class="skill-form-name-text">Skill proficiency percentage, %</label>
-                <input name="proficiency" class="skill-form-input" type="number">
-              </section>
-              <button class="skill-form-button">Add</button>
+                <input class="skill-form-input" name="proficiency" type="number">
+              </fieldset>
+              <fieldset>
+                <button class="skill-form-button">Add</button>
+              </fieldset>
             </form>
           </section>
         </section>
