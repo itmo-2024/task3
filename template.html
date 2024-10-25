@@ -79,11 +79,11 @@
         }
 
         #screen1 {
+          margin-top: 8px;
           display: flex;
           flex-flow: row;
           justify-content: space-between;
           align-items: center;
-          height: 96px;
         }
 
         .logo-image {
@@ -96,6 +96,7 @@
         .top-button-group {
           display: flex;
           flex-flow: row;
+          flex-wrap: wrap;
           gap: 8px;
         }
 
@@ -123,7 +124,6 @@
         #screen2 {
           display: grid;
           gap: 20px;
-          height: 614px;
         }
 
         .hello-text {
@@ -133,13 +133,13 @@
           line-height: 58px;
           margin: 0;
           padding: 0;
-          height: 174px;
         }
 
         #screen2 .image {
           border-radius: 8px;
           width: 1140px;
-          height: 400px;
+          max-width: 100%;
+          height: auto;
           object-fit: cover;
           object-position: center;
         }
@@ -265,8 +265,18 @@
 
         #screen4 img {
           border-radius: 8px;
+          width: 554px;
+          max-width: 100%;
+          min-width: 0;
+          height: auto;
           object-fit: cover;
           object-position: center;
+        }
+
+        @media (max-width: 765px) {
+          .experience-text-image {
+            flex-direction: column;
+          }
         }
 
         .experience-position {
@@ -298,7 +308,7 @@
           font-size: 16px;
           line-height: 24px;
           font-weight: 400;
-          width: 554px;
+          max-width: 554px;
           color: #363E45A3;
         }
 
@@ -318,8 +328,9 @@
 
         .skills {
           margin-left: -16px;
+          margin-right: 16px;
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(554px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
           column-gap: 5px;
           font-weight: 400;
           color: #363E45;
