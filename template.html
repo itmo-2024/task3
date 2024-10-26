@@ -78,7 +78,7 @@
           /* width: 1140px; */
         }
 
-        #screen1 {
+        .page-header {
           margin-top: 8px;
           display: flex;
           flex-flow: row;
@@ -121,7 +121,7 @@
           background-color: #f0f0f0;
         }
 
-        #screen2 {
+        .intro {
           display: grid;
           gap: 20px;
         }
@@ -135,7 +135,7 @@
           padding: 0;
         }
 
-        #screen2 .image {
+        .intro .image {
           border-radius: 8px;
           width: 1140px;
           max-width: 100%;
@@ -144,7 +144,7 @@
           object-position: center;
         }
 
-        #screen3 {
+        .education {
           display: flex;
           flex-flow: column;
           justify-content: space-between;
@@ -162,7 +162,7 @@
           color: #363E45;
         }
 
-        .education {
+        .education-info {
           display: flex;
           flex-flow: row;
           justify-content: start;
@@ -212,7 +212,7 @@
           color: #363E45;
         }
 
-        #screen4 {
+        .experience {
           display: flex;
           flex-flow: column;
           justify-content: space-between;
@@ -263,7 +263,7 @@
           margin: 0;
         }
 
-        #screen4 img {
+        .experience img {
           border-radius: 8px;
           width: 554px;
           max-width: 100%;
@@ -311,7 +311,7 @@
           color: #363E45A3;
         }
 
-        #screen5 {
+        .skills {
           display: flex;
           flex-flow: column;
           gap: 40px;
@@ -325,7 +325,7 @@
           margin: 0;
         }
 
-        .skills {
+        .skills-info {
           margin-left: -16px;
           margin-right: 16px;
           display: grid;
@@ -365,7 +365,7 @@
           border-radius: 4px;
         }
 
-        .skills .skill-name {
+        .skills-info .skill-name {
           font-size: 16px;
           line-height: 24px;
           font-weight: 400;
@@ -465,7 +465,7 @@
           background-color: #202326;
         }
 
-        #screen6 {
+        .contacts {
           display: flex;
           flex-flow: column;
           justify-content: space-between;
@@ -521,7 +521,7 @@
           font-weight: 400;
         }
 
-        #screen7 {
+        .page-footer {
           height: 144px;
           display: flex;
           flex-flow: row;
@@ -557,24 +557,24 @@
 </head>
 <body>
     <div class="Content">
-        <header id="screen1">
+        <header class="page-header">
           <img class="logo-image" width="40" height="40" alt="logo"/>
 
           <nav class="top-button-group">
-            <a href="#screen2"><button class="about-me-button">About me</button></a>
-            <a href="#screen3"><button class="education-button">Education</button></a>
-            <a href="#screen4"><button class="work-experience-button">Work Experience</button></a>
-            <a href="#screen5"><button class="skills-button">Skills</button></a>
-            <a href="#screen6"><button class="contacts-button">Contacts</button></a>
+            <a href="#intro"><button class="about-me-button">About me</button></a>
+            <a href="#education"><button class="education-button">Education</button></a>
+            <a href="#experience"><button class="work-experience-button">Work Experience</button></a>
+            <a href="#skills"><button class="skills-button">Skills</button></a>
+            <a href="#contacts"><button class="contacts-button">Contacts</button></a>
           </nav>
         </header>
-        <section id="screen2">
+        <section class="intro" id="intro">
           <p class="hello-text">Hello!<br>My name is Alex Smith<br>I'm creative front-end developer</p>
           <img class="image" height="400" width="1140" alt="My creative photo"/>
         </section>
-        <section id="screen3">
+        <section class="education" id="education">
           <p class="education-title">Education</p>
-          <section class="education">
+          <section class="education-info">
             <section class="first-column">
                 <dl class="edu-element">
                   <dt class="uni-name">Kingston university</dt>
@@ -586,11 +586,11 @@
                   <dt class="deg-name">Bachelor's degree - Computer Engineering</dt>
                   <dt class="years">2015 - 2019</dt>
                 </dl>
-              <dl class="edu-element">
-                <dt class="uni-name">Westminster School</dt>
-                <dt class="deg-name">Diploma's degree - Mathematics</dt>
-                <dt class="years">2013 - 2015</dt>
-              </dl>
+                <dl class="edu-element">
+                  <dt class="uni-name">Westminster School</dt>
+                  <dt class="deg-name">Diploma's degree - Mathematics</dt>
+                  <dt class="years">2013 - 2015</dt>
+                </dl>
             </section>
 
             <section class="second-column">
@@ -604,15 +604,15 @@
                 <dt class="deg-name">Bachelor's degree - Computer Engineering</dt>
                 <dt class="years">2015 - 2019</dt>
               </dl>
-            <dl class="edu-element">
-              <dt class="uni-name">Westminster School</dt>
-              <dt class="deg-name">Diploma's degree - Mathematics</dt>
-              <dt class="years">2013 - 2015</dt>
-            </dl>
+              <dl class="edu-element">
+                <dt class="uni-name">Westminster School</dt>
+                <dt class="deg-name">Diploma's degree - Mathematics</dt>
+                <dt class="years">2013 - 2015</dt>
+              </dl>
             </section>
           </section>
         </section>
-        <section id="screen4">
+        <section class="experience" id="experience">
           <p class="experience-title">Work Experience</p>
           <section class="experience-button-group">
             <a href="https://apple.com"><button class="apple">Apple</button></a>
@@ -631,9 +631,9 @@
             <img class="image" width="554px" height="400px" alt="My other creative photo">
           </section>
         </section>
-        <section id="screen5">
+        <section class="skills" id="skills">
           <p class="skills-title">Skills</p>
-          <section class="skills">
+          <section class="skills-info">
             <section class="skills-section">
               <p class="skill-name">React</p>
               <progress value="90" max="100"></progress>
@@ -692,7 +692,7 @@
             </form>
           </section>
         </section>
-        <section id="screen6">
+        <section class="contacts" id="contacts">
           <p class="contacts-section-title">Contacts</p>
           <section class="contacts-group">
             <a href="https://g.co/kgs/q768TFS">
@@ -718,7 +718,7 @@
             </a>
           </section>
         </section>
-        <footer id="screen7">
+        <footer class="page-footer" id="page-footer">
           <section class="social-media">
             <a href="https://instagram.com/shvetsovart"><img class="instagram-image" width="24" height="24" alt="Instagram"></a>
             <a href="https://github.com/shvetsovart"><img class="github-image" width="24" height="24" alt="Github"></a>
