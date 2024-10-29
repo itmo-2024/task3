@@ -163,19 +163,9 @@
         }
 
         .education-info {
-          display: flex;
-          flex-flow: row;
-          justify-content: start;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(554px, 1fr));
           gap: 32px;
-        }
-
-        .first-column,
-        .second-column {
-          display: flex;
-          flex-flow: column;
-          justify-content: space-between;
-          gap: 32px;
-          width: 554px;
         }
 
         .edu-element {
@@ -575,25 +565,6 @@
         <section class="education" id="education">
           <p class="education-title">Education</p>
           <section class="education-info">
-            <section class="first-column">
-                <dl class="edu-element">
-                  <dt class="uni-name">Kingston university</dt>
-                  <dt class="deg-name">Master's degree - Software Engineering</dt>
-                  <dt class="years">2019 - 2021</dt>
-                </dl>
-                <dl class="edu-element">
-                  <dt class="uni-name">Kingston university</dt>
-                  <dt class="deg-name">Bachelor's degree - Computer Engineering</dt>
-                  <dt class="years">2015 - 2019</dt>
-                </dl>
-                <dl class="edu-element">
-                  <dt class="uni-name">Westminster School</dt>
-                  <dt class="deg-name">Diploma's degree - Mathematics</dt>
-                  <dt class="years">2013 - 2015</dt>
-                </dl>
-            </section>
-
-            <section class="second-column">
               <dl class="edu-element">
                 <dt class="uni-name">Kingston university</dt>
                 <dt class="deg-name">Master's degree - Software Engineering</dt>
@@ -609,7 +580,21 @@
                 <dt class="deg-name">Diploma's degree - Mathematics</dt>
                 <dt class="years">2013 - 2015</dt>
               </dl>
-            </section>
+            <dl class="edu-element">
+              <dt class="uni-name">Kingston university</dt>
+              <dt class="deg-name">Master's degree - Software Engineering</dt>
+              <dt class="years">2019 - 2021</dt>
+            </dl>
+            <dl class="edu-element">
+              <dt class="uni-name">Kingston university</dt>
+              <dt class="deg-name">Bachelor's degree - Computer Engineering</dt>
+              <dt class="years">2015 - 2019</dt>
+            </dl>
+            <dl class="edu-element">
+              <dt class="uni-name">Westminster School</dt>
+              <dt class="deg-name">Diploma's degree - Mathematics</dt>
+              <dt class="years">2013 - 2015</dt>
+            </dl>
           </section>
         </section>
         <section class="experience" id="experience">
