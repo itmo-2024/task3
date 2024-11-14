@@ -1,21 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "JetBrains Mono", monospace;
-  background: #404040;
   color: #363e45;
+  background: #404040;
 }
 
 .container {
-  width: 1440px;
+  width: 960px;
   margin: 0 auto;
-  padding: 150px;
+  padding: 20px;
   background: #ffffff;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .header-flex {
@@ -24,77 +17,41 @@ body {
   align-items: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0;
-  background-color: #fff;
-  position: relative;
-}
-
-.Image_mancomp {
-  background-image: url("image.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.menu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.menu ul {
   display: flex;
   gap: 20px;
 }
 
-.menu button {
-  padding: 10px 20px;
+.menu a {
   background-color: #f0f0f0;
-  border: none;
+  padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-.menu button:hover {
+.menu a:hover {
   background-color: #ddd;
-}
-
-main {
-  margin-top: 150px;
-}
-
-.intro h1, .intro h2 {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .profile-image {
   display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  margin: 20px auto;
+  border-radius: 50%;
 }
 
-.education-block, .skills-container {
+.education-block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+.skills-container {
+  display: grid;
   gap: 20px;
 }
 
-.education-item, .skill {
-  margin-bottom: 10px;
-}
-
-.progress-bar {
+progress {
   width: 100%;
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-.progress {
   height: 20px;
-  background-color: #4caf50;
-  border-radius: 5px;
 }
 
 .contacts-container {
@@ -106,24 +63,4 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.icon {
-  font-size: 24px;
-}
-
-.social-media {
-  display: flex;
-  gap: 15px;
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
-  padding: 20px 0;
 }
