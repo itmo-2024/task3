@@ -21,7 +21,7 @@
 
 body
 {
-    font-family: "JetBrains Mono";
+    font-family: "JetBrains Mono", monospace;
     display: flex;
     flex: 1;
     flex-flow: column;
@@ -67,39 +67,10 @@ header
     height: 48px;
 }
 
-.button-card-width-109px
-{
-    width: 109.2px;
-}
-
-.button-card-width-117px
-{
-    width: 117.6px;
-}
-
-.button-card-width-168px
-{
-    width: 168px;
-}
-
-.button-card-width-92px
-{
-    width: 92.41px;
-}
-
-.button-card-width-84px
-{
-    width: 84px;
-}
-
 .button-card-text
 {
-    font: 400 14px/16px "JetBrains Mono";
+    font: 400 14px/16px "JetBrains Mono", monospace;
     text-align: center;
-}
-
-.default-text-style
-{
     margin: 0;
     color: #363e45;
 }
@@ -113,13 +84,15 @@ header
 
 .greeting-text
 {
-    font: 500 48px/58px "JetBrains Mono";
+    font: 500 48px/58px "JetBrains Mono", monospace;
     text-align: left;
+    margin: 0;
+    color: #363e45;
 }
 
 .greeting-apos
 {
-    font: 400 48px/58px "JetBrains Mono";
+    font: 400 48px/58px "JetBrains Mono", monospace;
     text-align: left;
 }
 
@@ -127,7 +100,7 @@ header
 {
     padding: 0;
     margin: 0;
-    font: 500 48px/48px "JetBrains Mono";
+    font: 500 48px/48px "JetBrains Mono", monospace;
     color: #363e45;
 }
 
@@ -173,7 +146,7 @@ header
 .style-500w-20-24px
 {
     margin: 0;
-    font: 500 20px/24px "JetBrains Mono";
+    font: 500 20px/24px "JetBrains Mono", monospace;
     color: #363e45;
     text-align: left;
 }
@@ -181,7 +154,7 @@ header
 .style-400w-16-24px-trans
 {
     margin: 0;
-    font: 400 16px/24px "JetBrains Mono";
+    font: 400 16px/24px "JetBrains Mono", monospace;
     color: rgba(54, 62, 69, 0.64);
     text-align: left;
 }
@@ -189,7 +162,7 @@ header
 .style-400w-16-24px
 {
     margin: 0;
-    font: 400 16px/24px "JetBrains Mono";
+    font: 400 16px/24px "JetBrains Mono", monospace;
     color: #363e45;
     text-align: left;
 }
@@ -294,26 +267,26 @@ header
     padding: 32px;
     background: rgba(152, 163, 174, 0.12);
     border-radius: 8px;
- }
+}
 
- .input-forms-container
- {
+.input-forms-container
+{
     display: flex;
     flex-direction: row;
     gap: 16px;
     align-items: flex-end;
- }
+}
 
- .skill-name-container
- {
+.skill-name-container
+{
     display: flex;
     flex: 1;
     flex-direction: column;
     gap: 8px;
- }
+}
 
- .input-field-container
- {
+.input-field-container
+{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -324,15 +297,16 @@ header
     background: white;
     border: 1px solid rgba(156, 163, 170, 0.48);
     border-radius: 8px;
- }
+}
 
- .field {
+.field
+{
     flex: 1 1 auto;
     height: 40px;
- }
+}
 
- .skill-btn-card
- {
+.skill-btn-card
+{
     display: flex;
     flex: 0;
     gap: 8px;
@@ -341,17 +315,17 @@ header
     padding: 16px 20px;
     background: #2f3337;
     border-radius: 8px;
- }
+}
 
- .skill-btn-card-text
- {
+.skill-btn-card-text
+{
     margin: 0;
-    font: 400 14px/16px "JetBrains Mono";
+    font: 400 14px/16px "JetBrains Mono", monospace;
     color: white;
- }
+}
 
- .contacts-card
- {
+.contacts-card
+{
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -359,31 +333,37 @@ header
     padding: 32px;
     background: rgba(152, 163, 174, 0.12);
     border-radius: 8px;
- }
+}
 
- .svg-container
- {
+.svg-container
+{
     width: 40px;
     height: 40px;
- }
+}
 
- .footer-container
- {
+.footer-container
+{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 60px;
     background: white;
- }
+}
 
- .copyright-text-style
- {
+.copyright-text-style
+{
     padding: 0;
     margin: 0;
-    font: 400 14px/18.48px "JetBrains Mono";
+    font: 400 14px/18px "JetBrains Mono", monospace;
     color: rgba(54, 62, 69, 0.64);
- }
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
 
 *
 {
