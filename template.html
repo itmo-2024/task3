@@ -61,13 +61,16 @@
             margin-right: 0;
         }
 
-        .nav-item {
+        .nav-buttons button {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--default-color);
             font-size: 14px;
             line-height: 16px;
             font-weight: 400;
             padding: 15px 20px;
             border-radius: 8px;
             border: 1px solid lightgray;
+            background-color: #ffffff;
         }
 
         .intro-container {
@@ -415,7 +418,7 @@
             gap: 24px;
             background: rgba(152, 163, 174, 0.12);
             border-radius: 8px;
-            width: 358.67px;
+            width: 358px;
             height: 400px;
         }
 
@@ -426,7 +429,7 @@
             padding: 0px;
             gap: 8px;
             margin: 0 auto;
-            width: 294.67px;
+            width: 294px;
             height: 56px;
             /*background-color: aqua;*/
         }
@@ -441,6 +444,12 @@
             color: rgba(54, 62, 69, 0.64);
             width: 100%;
             margin-left: 0;
+        }
+
+        .contact-value a {
+            color: rgba(54, 62, 69, 0.64);
+            text-decoration: none;
+            font: inherit;
         }
 
         /*screen 7*/
@@ -476,11 +485,11 @@
         <header id="screen1" class="navigation">
             <div class="logo"></div>
             <section class="nav-buttons">
-                <section class="nav-item">About me</section>
-                <section class="nav-item">Education</section>
-                <section class="nav-item">Work Experience</section>
-                <section class="nav-item">Skills</section>
-                <section class="nav-item">Contacts</section>
+                <button>About me</button>
+                <button>Education</button>
+                <button>Work Experience</button>
+                <button>Skills</button>
+                <button>Contacts</button>
             </section>
         </header>
 
@@ -664,7 +673,9 @@
                     </svg>
                     <dl class="info-item">
                         <dt class="contact-label">Phone</dt>
-                        <dd class="contact-value">+7 (000) 000 00 00</dd>
+                        <dd class="contact-value">
+                            <a href="tel:+70000000000">+7 (000) 000 00 00</a>
+                        </dd>
                     </dl>
                 </div>
                 <div class="contact-card">
@@ -674,7 +685,9 @@
                     </svg>
                     <dl class="info-item">
                         <dt class="contact-label">E-Mail</dt>
-                        <dt class="contact-value">myemail@yandex.ru</dt>
+                        <dd class="contact-value">
+                            <a href="mailto:myemail@yandex.ru">myemail@yandex.ru</a>
+                        </dd>
                     </dl>
                 </div>
             </div>
