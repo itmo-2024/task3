@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Резюме</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="Content" tabindex="0">
+    <header id="screen1">
+      <div class="container-header">
+        <img src="images/logo.svg" alt="logo" />
+        <nav>
+          <div class="menu-buttons-group">
+            <a href="#screen2"><button class="menu-button" style="width: 109.2px">
+                Обо мне
+              </button></a>
+            <a href="#screen3"><button class="menu-button" style="width: 117.6px">
+                Образование
+              </button></a>
+            <a href="#screen4"><button class="menu-button" style="width: 168px">
+                Значимые работы
+              </button></a>
+            <a href="#screen5"><button class="menu-button" style="width: 92.41px">
+                Навыки
+              </button></a>
+            <a href="#screen6"><button class="menu-button" style="width: 109.2px">
+                Контакты
+              </button></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="Content" id="screen2">
+      <div class="info-about" tabindex="0">
+        <div class="introducing">
+          Привет!<br />
+          Меня зовут Коршунов Илья<br />
+          Рад рассказать Вам о себе!<br />
+        </div>
+        <img class="Image" alt="картинка для красоты" aria-hidden="true" style="width: 1140px; height: 400px" />
+      </div>
+    </section>
+
+    <section class="Content" id="additional screen">
+      <div class="work" tabindex="0">
+        <div class="introducing" tabindex="0" role="heading" aria-level="2">Черты личности</div>
+        <!-- было лень это все менять на h2 -->
+        <div class="personality-container">
+
+          <div class="skill-box-side" role="list">
+            <div role="listitem" aria-label="Описание интроверт" class="skill-item" tabindex="0" id="trait0"
+              onmouseover="showDescription(this.id)" onmouseout="clearDescription()">
+              <div class="skill-item-description">Интроверт</div>
+              <div class="skill-container">
+                <div class="skill-into-container" style="width: 53%"></div>
+              </div>
+              <div class="borders">
+                <span class="border-label left">Экстраверт</span>
+                <span class="border-label right">Интроверт</span>
+              </div>
+            </div>
+
+            <div role="listitem" aria-label="Интуитивные" class="skill-item" tabindex="0" id="trait1"
+              onmouseover="showDescription(this.id)" onmouseout="clearDescription()">
+              <div class="skill-item-description">Интуитивные</div>
+              <div class="skill-container">
+                <div class="skill-into-container" style="width: 59%"></div>
+              </div>
+              <div class="borders">
+                <span class="border-label left">Интуитивные</span>
+                <span class="border-label right">Реалистичные</span>
+              </div>
+            </div>
+
+            <div role="listitem" aria-label="Логика" class="skill-item" tabindex="0" id="trait2"
+              onmouseover="showDescription(this.id)" onmouseout="clearDescription()">
+              <div class="skill-item-description">Логика</div>
+              <div class="skill-container">
+                <div class="skill-into-container" style="width: 67%"></div>
+              </div>
+              <div class="borders">
+                <span class="border-label left">Логика</span>
+                <span class="border-label right">Принципы</span>
+              </div>
+              <div class="borders"></div>
+            </div>
+
+            <div aria-label="Ищущие" role="listitem" class="skill-item" tabindex="0" id="trait3"
+              onmouseover="showDescription(this.id)" onmouseout="clearDescription()">
+              <div class="skill-item-description">Ищущие</div>
+              <div class="skill-container">
+                <div class="skill-into-container" style="width: 51%"></div>
+              </div>
+              <div class="borders">
+                <span class="border-label left">Планирующие</span>
+                <span class="border-label right">Ищущие</span>
+              </div>
+            </div>
+
+            <div role="listitem" aria-label="Уверенные" class="skill-item" tabindex="0" id="trait4"
+              onmouseover="showDescription(this.id)" onmouseout="clearDescription()">
+              <div class="skill-item-description">Уверенные</div>
+              <div class="skill-container">
+                <div class="skill-into-container" style="width: 69%"></div>
+              </div>
+              <div class="borders">
+                <span class="border-label left">Уверенные</span>
+                <span class="border-label right">Осторожные</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="personality" id="descriptionBox">
+            <p id="descriptionText" style="text-align: center;">
+              Наведите на черту личности, чтобы увидеть описание.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen3">
+      <div class="education" tabindex="0">
+        <div class="education-title">Образование</div>
+
+        <div class="education-table">
+          <div class="education-description">
+            <div class="education-block">
+              <div class="education-block-info">
+                <div class="university-text">Лицей №239</div>
+                <div class="university-text-description">
+                  Школьное образование
+                </div>
+              </div>
+              <div class="university-year">2019 - 2022</div>
+            </div>
+
+            <div class="education-block">
+              <div class="education-block-info">
+                <div class="university-text">Университет ИТМО</div>
+                <div class="university-text-description">
+                  Бакалавриват, ПМИ
+                </div>
+              </div>
+              <div class="university-year">2022 - 2026</div>
+            </div>
+          </div>
+
+          <div class="education-description">
+            <div class="education-block">
+              <div class="education-block-info">
+                <div class="university-text">Лицей №239</div>
+                <div class="university-text-description">
+                  Школьное образование
+                </div>
+              </div>
+              <div class="university-year">2019 - 2022</div>
+            </div>
+
+            <div class="education-block">
+              <div class="education-block-info">
+                <div class="university-text">Университет ИТМО</div>
+                <div class="university-text-description">
+                  Бакалавриват, ПМИ
+                </div>
+              </div>
+              <div class="university-year">2022 - 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Content" id="screen4">
+      <div class="work" tabindex="0">
+        <div class="work-title">Значимые работы</div>
+        <div class="work-menu">
+          <button id="job1" class="work-button" onclick="changeText(this)">
+            Java
+          </button>
+          <button id="job2" class="work-button" onclick="changeText(this)">
+            Android приложение
+          </button>
+          <button id="job3" class="work-button" onclick="changeText(this)">
+            Консольная утилита
+          </button>
+        </div>
+
+        <div class="work-description">
+          <div class="work-block-text">
+            <div class="work-place-work">
+              <div id="jobTitle" class="work-place-work-job">Java</div>
+              <div id="jobPlace" class="work-place-work-place">ИТМО</div>
+            </div>
+            <div id="jobDescription" class="work-text">
+              Домашние задания по курсу Java (ссылки пока что не будет)
+            </div>
+          </div>
+          <img class="Image" alt="картинка для красоты" aria-hidden="true" style="
+                width: 554px;
+                height: 400px;
+                border-radius: 8px;
+                object-fit: cover;
+                margin-left: auto;
+              " />
+        </div>
+      </div>
+    </section>
+
+    <section id="screen5">
+      <div class="skill" tabindex="0">
+        <div class="skill-title">Навыки</div>
+        <div class="skill-box">
+          <div class="skill-box-side" id="leftColumn"></div>
+
+          <div class="skill-box-side" id="rightColumn"></div>
+
+          <div id="skillsList" class="skills-list"></div>
+        </div>
+
+        <div class="skill-add">
+          <div class="skill-add-description">Добавьте новый навык</div>
+
+          <div class="skill-form">
+            <div class="skill-form-field">
+              <div class="skill-form-field-description">Название навыка</div>
+              <input type="text" id="skillName" class="skill-form-box" placeholder="Введите название навыка" />
+            </div>
+
+            <div class="skill-form-field">
+              <div class="skill-form-field-description">
+                Уровень владения %
+              </div>
+              <input type="number" id="skillPercentage" class="skill-form-box"
+                placeholder="Введите уровень владения навыком" min="0" max="100" />
+            </div>
+
+            <button class="skill-button" onclick="addSkill()">Add</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Content" id="screen6">
+      <div class="contacts" tabindex="0">
+        <div class="contacts-description">Контакты</div>
+
+        <div class="contacts-box">
+          <div class="contact-item" onclick="copyBuffer(this.querySelector('.contact-item-subtitle').textContent)">
+            <img src="images/magnifier.svg" alt="magnifier logo" class="my_icon" />
+            <div class="contact-item-text">
+              <div class="contact-item-text-main">Address</div>
+              <div class="contact-item-subtitle">Шоссе в Лаврики, Мурино</div>
+            </div>
+          </div>
+
+          <div class="contact-item" onclick="copyBuffer(this.querySelector('.contact-item-subtitle').textContent)">
+            <img src="images/phone.svg" alt="phone logo" class="my_icon" />
+            <div class="contact-item-text">
+              <div class="contact-item-text-main">Телефон</div>
+              <div class="contact-item-subtitle">+7 (000) 000 00 00</div>
+            </div>
+          </div>
+
+          <div class="contact-item" onclick="copyBuffer(this.querySelector('.contact-item-subtitle').textContent)">
+            <img src="images/mail.svg" alt="mail logo" class="my_icon" />
+            <div class="contact-item-text">
+              <div class="contact-item-text-main">E-Mail</div>
+              <div class="contact-item-subtitle">
+                I.Korshunov2004@yandex.ru
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="screen7">
+      <div class="for_footer" tabindex="0">
+        <div class="icons">
+          <a href="https://github.com/IlKorshunov" aria-label="если хотите перейти на гитхаб по ссылке, нажмите Enter"
+            onfocus="showAlertOnce(event)" onkeydown="openLink(this, event)">
+            <img src="images/github.svg" alt="GitHub Icon" />
+          </a>
+        </div>
+        <div class="copyright" style="color: var(--main-color)">
+          &copy; 2023
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script>
+  window.onload = function () {
+    const want = confirm(
+      "Хотите использовать версию для людей с ограниченными возможностями?"
+    );
+
+    if (want) {
+      document.documentElement.style.setProperty(
+        "--main-bg-color",
+        "rgba(54, 62, 69, 1)"  
+      );
+      document.documentElement.style.setProperty(
+        "--main-text-color",
+        "#ffffff" 
+      );
+      document.querySelectorAll(".delete-button").forEach((button) => {
+        button.style.opacity = 1;
+      });
+
+    } else {
+      document.documentElement.style.setProperty(
+        "--main-bg-color",
+        "gray"
+      );
+      document.documentElement.style.setProperty(
+        "--main-text-color",
+        "yellow"
+      );
+    }
+  };
+
+
+  flag = false;
+  function showAlertOnce(link) {
+    if (!flag) {
+      alert("Для перехода на GitHub нажмите Enter");
+      flag = true;
+    }
+  }
+  function openLink(link, event) {
+    if (event.key == "Enter") {
+      event.preventDefault();
+      window.open(link.href, "_blank");
+    }
+    flag = true;
+  }
+  let flagCol = true;
+
+  function addSkill(name = null, percentage = null) {
+    if (name == null && percentage == null) {
+      name = document.getElementById("skillName").value;
+      percentage = document.getElementById("skillPercentage").value;
+
+      if (name === "" || percentage === "") {
+        alert("Введите в поле значение");
+        return;
+      }
+
+      if (percentage < 0 || percentage > 100) {
+        alert("Некорректный навык владения");
+        return;
+      }
+    }
+    const column = flagCol
+      ? document.getElementById("leftColumn")
+      : document.getElementById("rightColumn");
+    flagCol = !flagCol;
+
+    column.insertAdjacentHTML(
+      "beforeend",
+      `
+            <div class="skill-item" tabindex="0">
+                <div class="skill-item-description">${name}</div>
+                <div class="skill-container">
+                    <div class="skill-into-container" style="width: ${percentage}%;"></div>
+                </div>
+                <button class="delete-button" onclick="deleteButton(this)" aria-label="Удалить элемент"></button>
+            </div>
+            `
+    );
+
+    document.getElementById("skillName").value = "";
+    document.getElementById("skillPercentage").value = "";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const skillItems = document.querySelectorAll(".skill-item");
+
+  skillItems.forEach(item => {
+    item.addEventListener("mouseover", function () {
+      const deleteButton = item.querySelector(".delete-button");
+      deleteButton.style.opacity = "1"; 
+    });
+
+    item.addEventListener("mouseout", function () {
+      const deleteButton = item.querySelector(".delete-button");
+      deleteButton.style.opacity = "0";
+    });
+  });
+});
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const skills = [
+      ["Java", 60],
+      ["Python", 45],
+      ["Go", 30],
+      ["C++", 10],
+      ["HTML+CSS", 15],
+      ["Javascript", 20],
+      ["Haskell", 5],
+    ];
+
+    skills.forEach(([name, percentage]) => {
+      addSkill(name, percentage);
+    });
+  });
+
+  function deleteButton(button) {
+    const item = button.closest(".skill-item");
+    item.remove();
+  }
+
+  function changeText(button) {
+    const job = button.textContent.trim();
+    const task = document.getElementById("jobTitle");
+    const place = document.getElementById("jobPlace");
+    const description = document.getElementById("jobDescription");
+
+    switch (job) {
+      case "Java":
+        task.textContent = "Java";
+        place.textContent = "ИТМО";
+        description.innerHTML =
+          "Домашние задания по курсу Java <br> (ссылки пока что не будет)";
+        break;
+      case "Android приложение":
+        task.textContent = "Android приложение";
+        place.textContent = "ВК";
+        description.textContent = "Мессенджер";
+        break;
+      case "Консольная утилита":
+        task.textContent = "Консольная утилита";
+        place.textContent = "ШАД";
+        description.innerHTML =
+          "Консольная утилита для подсчёта статистики авторов git репозитория.<br><br>" +
+          "Статистика включает:<br>" +
+          "- Количество строк<br>" +
+          "- Количество коммитов<br>" +
+          "- Количество файлов<br><br>" +
+          "Все статистики считаются для состояния репозитория на момент конкретного коммита.";
+        break;
+    }
+  }
+
+  flagBuffer = false;
+  function copyBuffer(text) {
+    flagBuffer = false;
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        if (!flagBuffer) {
+          alert("Данные успешно скопировались в буффер обмена");
+          flagBuffer = true;
+        }
+      })
+      .catch((err) => {
+        console.error("Ошибка при копировании: ", err);
+      });
+  }
+
+  function formatDescription(text) {
+    const words = text.split(" ");
+    let formattedText = "";
+    for (let i = 0; i < words.length; i++) {
+      formattedText += words[i] + " ";
+      if ((i + 1) % 4 === 0) {
+        formattedText += "<br>";
+      }
+    }
+    return formattedText.trim();
+  }
+
+  function showDescription(id) {
+    const descriptions = {
+      trait0: formatDescription(
+        "Интровертные личности предпочитают редкое, но значимое взаимодействие и более спокойную обстановку."
+      ),
+      trait1: formatDescription(
+        "Интуитивные личности фокусируются на больших идеях и возможностях."
+      ),
+      trait2: formatDescription(
+        "Логические личности принимают решения на основе фактов и анализа."
+      ),
+      trait3: formatDescription(
+        "Ищущие личности склонны к экспериментам и адаптации."
+      ),
+      trait4: formatDescription(
+        "Уверенные личности обладают высокой уверенностью в себе и устойчивостью."
+      ),
+    };
+
+    document.getElementById("descriptionText").innerHTML = descriptions[id];
+  }
+
+  function clearDescription() {
+    document.getElementById("descriptionText").innerHTML =
+      "Наведите на черту личности, чтобы увидеть описание.";
+  }
+</script>
+
+</html>
