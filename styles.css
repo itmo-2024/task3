@@ -303,6 +303,8 @@ header
 {
     flex: 1 1 auto;
     height: 40px;
+    outline: none;
+    border: none;
 }
 
 .skill-btn-card
