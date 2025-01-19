@@ -61,7 +61,7 @@
             gap: 8px;
         }
 
-        .top-info-buttons button {
+        .top-info-button {
             font-family: 'JetBrains Mono';
             font-size: 14px;
             line-height: 16px;
@@ -71,10 +71,7 @@
             color: var(--main-color);
             border: 1px solid var(--border-color);
             align-items: center;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: background-color 0.3s ease;
-            height: 48px;
+            text-decoration: none;
             padding: 16px 20px;
         }
 
@@ -460,21 +457,21 @@
     <header id="screen1" class="top-info">
         <img class="logo" width="40" height="40" alt="logo">
         <nav class="top-info-buttons">
-            <a href="#screen2"><button>About me</button></a>
-            <a href="#screen3"><button>Education</button></a>
-            <a href="#screen4"><button>Work Experience</button></a>
-            <a href="#screen5"><button>Skills</button></a>
-            <a href="#screen6"><button>Contacts</button></a>
+            <a href="#screen2" class="top-info-button">About me</a>
+            <a href="#screen3" class="top-info-button">Education</a>
+            <a href="#screen4" class="top-info-button">Work Experience</a>
+            <a href="#screen5" class="top-info-button">Skills</a>
+            <a href="#screen6" class="top-info-button">Contacts</a>
         </nav>
     </header>
 
     <section id="screen2" class="greeting">
-        <h2 class="greeting-text">Hello!<br>My name is Alex Smith<br>I'm creative front-end developer</h2>
+        <h1 class="greeting-text">Hello!<br>My name is Alex Smith<br>I'm creative front-end developer</h1>
         <img class="Image" width="1140" height="400"/>
     </section>
 
     <section id="screen3" class="education">
-        <h2 class="education-title">Education</h2>
+        <h1 class="education-title">Education</h1>
         <section class="education-desc">
             <dl class="education-entry">
                 <dt class="education-place">Kingston university</dt>
@@ -510,7 +507,7 @@
     </section>
 
     <section id="screen4" class="work-experience">
-        <h2 class="work-experience-title">Work Experience</h2>
+        <h1 class="work-experience-title">Work Experience</h1>
         <section class="work-experience-buttons">
             <a href="https://apple.com"><button>Apple</button></a>
             <a href="https://microsoft.com"><button>Microsoft</button></a>
@@ -539,7 +536,7 @@
     </section>
 
     <section id="screen5" class="skills">
-        <h2 class="skills-title">Skills</h2>
+        <h1 class="skills-title">Skills</h1>
         <section class="skills-desc">
             <div class="skills-column">
                 <div class="skill-entry">
@@ -603,7 +600,7 @@
     </section>
 
     <section id="screen6" class="contacts">
-        <h2 class="contacts-title">Contacts</h2>
+        <h1 class="contacts-title">Contacts</h1>
         <section class="contacts-container">
             <a href="https://yandex.ru/maps/213/moscow/house/ulitsa_lva_tolstogo_16/Z04Ycw9nSUwEQFtvfXtycnVkYA==/?ll=37.587093%2C55.733974&z=17">
                 <section class="contact-entry">
