@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="Content">
+      <header id="screen1" class="header-section">
+        <img src="img/logo.png" alt="logo" />
+        <nav class="header-nav">
+          <a href="#screen2">About me</a>
+          <a href="#screen3">Education</a>
+          <a href="#screen4">Work Experience</a>
+          <a href="#screen5">Skills</a>
+          <a href="#screen6">Contacts</a>
+        </nav>
+      </header>
+
+      <section id="screen2" class="about-section">
+        <span>
+          <div>Hello!</div>
+          <div>My name is Alex Smith</div>
+          <div>I'm creative front-end developer</div>
+        </span>
+        <img class="Image" width="1140" height="400" alt="photo" />
+      </section>
+
+      <section id="screen3" class="education-section">
+        <div class="section-title">Education</div>
+        <div class="two-columns">
+          <div class="column">
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Kingston university</div>
+                <div class="edu-description">
+                  Master's degree - Software Engineering
+                </div>
+              </div>
+              <div class="edu-year">2019 - 2021</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Kingston university</div>
+                <div class="edu-description">
+                  Bachelor's degree - Computer Engineering
+                </div>
+              </div>
+              <div class="edu-year">2015 - 2019</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Westminster School</div>
+                <div class="edu-description">
+                  Diploma's degree - Mathematics
+                </div>
+              </div>
+              <div class="edu-year">2013 - 2015</div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Kingston university</div>
+                <div class="edu-description">
+                  Master's degree - Software Engineering
+                </div>
+              </div>
+              <div class="edu-year">2019 - 2021</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Kingston university</div>
+                <div class="edu-description">
+                  Bachelor's degree - Computer Engineering
+                </div>
+              </div>
+              <div class="edu-year">2015 - 2019</div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-organization">
+                <div class="edu-name">Westminster School</div>
+                <div class="edu-description">
+                  Diploma's degree - Mathematics
+                </div>
+              </div>
+              <div class="edu-year">2013 - 2015</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen4" class="experience-section">
+        <div class="section-title">Work Experience</div>
+        <div class="companies">
+          <div>Apple</div>
+          <div>Microsoft</div>
+          <div>Facebook</div>
+        </div>
+        <div class="experience-content">
+          <div class="experience-text">
+            <div class="job-head">
+              <div class="job-title">Front-end Developer Apple.Inc</div>
+              <div class="job-location">California, United States</div>
+            </div>
+            <div class="job-period">Nov 2020 - Present · Full-time</div>
+            <div class="job-description">
+              В начале XX века немецкие психологи провели исследования
+              восприятия человеком окружающего мира. Они выявили естественное
+              стремление человека найти порядок в беспорядке.
+            </div>
+            <div class="job-description">
+              Их эксперименты показали, что когда мозг обрабатывает полученные
+              образы, он воспринимает разрозненные элементы как единое целое.
+              Подсознательно мы пытаемся группировать похожие элементы,
+              распознавать закономерности и таким образом упрощать сложные
+              образы.
+            </div>
+          </div>
+          <img class="Image" alt="photo" width="554" height="400" />
+        </div>
+      </section>
+
+      <section id="screen5" class="skills-section">
+        <div class="section-title">Skills</div>
+        <div class="skills-content">
+          <div class="column">
+            <div class="skill">
+              <div class="skill-name">React</div>
+              <progress max="100" value="90"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Angular</div>
+              <progress max="100" value="70"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">HTML + CSS</div>
+              <progress max="100" value="100"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Javascript</div>
+              <progress max="100" value="20"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Python</div>
+              <progress max="100" value="25"></progress>
+            </div>
+          </div>
+          <div class="column">
+            <div class="skill">
+              <div class="skill-name">Soft skill</div>
+              <progress max="100" value="80"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">Motion graphics</div>
+              <progress max="100" value="60"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">UX</div>
+              <progress max="100" value="20"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">UI</div>
+              <progress max="100" value="50"></progress>
+            </div>
+            <div class="skill">
+              <div class="skill-name">3D</div>
+              <progress max="100" value="25"></progress>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-skill-block">
+          <div class="form-title">Add new skill</div>
+          <div class="form-fields">
+            <div class="field">
+              <label for="skill">Skill name</label>
+              <input type="text" id="skill" required />
+            </div>
+            <div class="field">
+              <label for="percentage">Skill proficiency percentage, %</label>
+              <input type="text" id="percentage" required />
+            </div>
+            <button class="btn-add">Add</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen6" class="contacts-section">
+        <div class="section-title">Contacts</div>
+        <div class="contacts-content">
+          <div class="contact-card">
+            <img src="img/address.png" alt="address" width="40" height="40" />
+            <div class="contact-info">
+              <div class="contact-label">Address</div>
+              <address class="contact-detail">
+                16 Lva Tolstogo str., Moscow
+              </address>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <img src="img/phone.png" alt="phone" width="40" height="40" />
+            <div class="contact-info">
+              <div class="contact-label">Phone</div>
+              <a class="contact-detail" href="tel:7(000)000-00-00"
+                >+7 (000) 000 00 00</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <img src="img/mail.png" alt="mail" width="40" height="40" />
+            <div class="contact-info">
+              <div class="contact-label">E-Mail</div>
+              <a class="contact-detail" href="mailto:369081@niuitmo.ru"
+                >myemail@yandex.ru</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="screen7" class="footer-section">
+        <div class="footer-links">
+          <a href="https://instagram.com">
+            <img
+              src="img/instagram.png"
+              alt="instagram"
+              width="24"
+              height="24"
+            />
+          </a>
+          <a href="https://github.com">
+            <img src="img/git.png" alt="github" width="24" height="24" />
+          </a>
+          <a href="https://twitter.com">
+            <img src="img/twitter.png" alt="twitter" width="24" height="24" />
+          </a>
+          <a href="https://linkedin.com">
+            <img src="img/linkedin.png" alt="linkedin" width="24" height="24" />
+          </a>
+        </div>
+
+        <p class="copyright">© 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
